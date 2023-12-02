@@ -38,7 +38,7 @@ const Intro = () => {
             </div>
           </div>
           <div className="col-span-1  flex flex-col justify-center  items-center  space-y-10">
-            <H2Slide variants="SlideTopVariants" delay={0.1} className="text-6xl font-extrabold pb-5">Hey, I'm Gilbert</H2Slide >
+            <H2Slide variants="SlideTopVariants" delay={0.1} className="text-6xl font-extrabold pb-5">Hey, I&apos;m Gilbert</H2Slide >
            <MotionDiv variants={Imagevariants} initial="hidden" animate="visible" transition={{
             duration: 0.7,
             ease: "easeInOut",
