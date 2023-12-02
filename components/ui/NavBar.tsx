@@ -31,7 +31,7 @@ const NavBar = () => {
   return (
     <MotionDiv className="fixed inset-x-0 bottom-0  text-white flex justify-center">
       <AnimatePres>
-      <MotionUl className="flex gap-5  p-2 px-7  mb-2 gap-5 bg-main-bg/80 rounded-lg " variants={SlideTopVariants} 
+      <MotionUl className="flex gap-5  p-2 px-7  mb-2 gap-5 bg-main-bg/80 rounded-lg backdrop-blur-sm	" variants={SlideTopVariants} 
         initial="hidden" animate="visible" exit="exit"
         transition={{
           duration: 1.2,
@@ -39,9 +39,9 @@ const NavBar = () => {
           ease: easeOut,
         }}
       >
-        <MotionLi variants={HoverVairants} whileHover="hover"  className="text-2xl p-2 rounded-full font-bold bg-main-bg"><Link href="#"><MdOutlineHome /></Link></MotionLi>
-        <MotionLi variants={HoverVairants} whileHover="hover"  className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><Link href="#"><LuMonitor /></Link></MotionLi>
-        <MotionLi variants={HoverVairants} whileHover="hover" className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><Link href="#"><RiUser3Line /></Link></MotionLi>
+        <Link  href="/"><MotionLi variants={HoverVairants} whileHover="hover"  className="text-2xl p-2 rounded-full font-bold bg-main-bg "><MdOutlineHome /></MotionLi></Link>
+        <Link href="/work"><MotionLi variants={HoverVairants} whileHover="hover"  className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><LuMonitor /></MotionLi></Link>
+        <Link href="#"><MotionLi variants={HoverVairants} whileHover="hover" className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><RiUser3Line /></MotionLi></Link>
       </MotionUl>
       </AnimatePres>
   </MotionDiv>
