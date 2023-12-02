@@ -19,7 +19,7 @@ const WorkSecond = () => {
 
       <div className="w-full h-[1px] bg-white my-1 "> </div>
       {/* min-h-screen  */}
-      <div className="text-white  sm:m-10 flex justify-end ">
+      <div className="text-white  sm:m-10 flex justify-end overflow-hidden ">
         <SlideAnimation
           variants={variants}
           viewport={true}
@@ -33,7 +33,7 @@ const WorkSecond = () => {
             className="object-cover  h-60 sm:h-[88%]  rounded-l-xl rounded-b-none"
             alt="MY Profile Picture"
           />
-          <div className="sm:m-5 sm:p-5 bg-main-bg ">
+          <div className="sm:m-5 sm:p-5 bg-main-bg px-4 py-2 ">
             <h4 className="border  border-gray-900 text-sm ">
               Project
             </h4>

@@ -25,6 +25,26 @@ const HoverVairants = {
       ease: easeIn,
     },
   },
+  exit : {
+    scale: 1,
+    backgroundColor: "#fff",
+    color : "#000",
+    margin: '0 0.5rem',
+    transition: {
+      duration: 0.3,
+      ease: easeOut,
+    },
+  },
+  tap : {
+    scale: 1.1,
+    backgroundColor: "#fff",
+    color : "#000",
+    margin: '0 0.5rem',
+    transition: {
+      duration: 0.3,
+      ease: easeIn,
+    },
+  }
 }
 
 const NavBar = () => {
@@ -39,9 +59,9 @@ const NavBar = () => {
           ease: easeOut,
         }}
       >
-        <Link  href="/"><MotionLi variants={HoverVairants} whileHover="hover"  className="text-2xl p-2 rounded-full font-bold bg-main-bg "><MdOutlineHome /></MotionLi></Link>
-        <Link href="/work"><MotionLi variants={HoverVairants} whileHover="hover"  className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><LuMonitor /></MotionLi></Link>
-        <Link href="#"><MotionLi variants={HoverVairants} whileHover="hover" className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><RiUser3Line /></MotionLi></Link>
+        <Link  href="/"><MotionLi variants={HoverVairants} whileHover="hover" whileTap="tap"  exit="exit"  className="text-2xl p-2 rounded-full font-bold bg-main-bg "><MdOutlineHome /></MotionLi></Link>
+        <Link href="/work"><MotionLi variants={HoverVairants} whileHover="hover"  whileTap="tap"  exit="exit" className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><LuMonitor /></MotionLi></Link>
+        <Link href="#"><MotionLi variants={HoverVairants} whileHover="hover" whileTap="tap"  exit="exit" className="text-2xl  p-2 rounded-full font-bold bg-main-bg"><RiUser3Line /></MotionLi></Link>
       </MotionUl>
       </AnimatePres>
   </MotionDiv>
